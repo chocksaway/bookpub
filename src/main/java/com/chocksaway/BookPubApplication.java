@@ -1,4 +1,4 @@
-package org.test.bookpub;
+package com.chocksaway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,10 +1,10 @@
-package org.test.bookpub.repository;
+package com.chocksaway.repository;
 
+import com.chocksaway.entity.Publisher;
 import org.springframework.data.repository.PagingAndSortingRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
-import org.test.bookpub.entity.Reviewer;
 
 @RepositoryRestResource
-public interface ReviewerRepository extends
-        PagingAndSortingRepository<Reviewer, Long> {
+public interface PublisherRepository extends
+        PagingAndSortingRepository<Publisher, Long> {
 }

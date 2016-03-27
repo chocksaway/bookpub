@@ -1,4 +1,4 @@
-package org.test.bookpub;
+package com.chocksaway;
 
 import org.apache.catalina.filters.RemoteIpFilter;
 import org.springframework.context.annotation.Bean;

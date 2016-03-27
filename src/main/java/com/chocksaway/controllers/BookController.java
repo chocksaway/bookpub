@@ -1,11 +1,11 @@
-package org.test.bookpub.controllers;
+package com.chocksaway.controllers;
 
+import com.chocksaway.entity.Book;
+import com.chocksaway.entity.SimpleBook;
+import com.chocksaway.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
-import org.test.bookpub.entity.Book;
-import org.test.bookpub.entity.SimpleBook;
-import org.test.bookpub.repository.BookRepository;
 
 @RestController
 @RequestMapping("/books")

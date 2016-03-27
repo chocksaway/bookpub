@@ -1,8 +1,8 @@
-package org.test.bookpub.repository;
+package com.chocksaway.repository;
 
+import com.chocksaway.entity.Book;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-import org.test.bookpub.entity.Book;
 
 @Repository
 public interface BookRepository extends CrudRepository<Book, Long> {

@@ -1,4 +1,4 @@
-package org.test.bookpub.entity;
+package com.chocksaway.entity;
 
 import javax.persistence.*;
 import java.util.List;

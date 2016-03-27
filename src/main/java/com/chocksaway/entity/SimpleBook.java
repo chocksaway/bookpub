@@ -1,4 +1,4 @@
-package org.test.bookpub.entity;
+package com.chocksaway.entity;
 
 /**
  * Created by milesd on 19/03/2016.
