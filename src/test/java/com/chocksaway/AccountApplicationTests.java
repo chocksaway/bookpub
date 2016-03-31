@@ -3,6 +3,7 @@ package com.chocksaway;
 import com.chocksaway.entity.Account;
 import com.chocksaway.repository.AccountRepository;
 import com.google.gson.Gson;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -34,8 +35,6 @@ public class AccountApplicationTests {
             MediaType.APPLICATION_JSON.getSubtype(),
             Charset.forName("utf8"));
 
-
-
     @Autowired
 	private AccountRepository accRepo;
 
@@ -46,8 +45,6 @@ public class AccountApplicationTests {
     public void setUp() {
         this.mvc = MockMvcBuilders.webAppContextSetup(this.context).build();
         this.account = accRepo.save(new Account("milesd", "password"));
-
-
     }
 
     @Test
@@ -63,10 +60,7 @@ public class AccountApplicationTests {
 
         String content = result.getResponse().getContentAsString();
 
-        System.out.println("tester");
-
-
-
+        Assert.assertEquals(content, "Hello");
     }
 
 
